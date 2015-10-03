@@ -1,2 +1,4 @@
 PiOnCPU
-Comput Pi on CPU use BBP algorithm. Only single core, for now. I'm working on it.
+Compute Pi on CPU use BBP algorithm. Only single core, for now. Version 1.0 is ready to go.
+This program aims to compare with PiOnGPU but now, actually, BBP algorithm is not 
+run well on CPU(single thread). I'm still working on it so that it can run faster.

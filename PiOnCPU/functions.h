@@ -8,3 +8,8 @@ void DecToHexSingle(unsigned char dec, char * hex);
 
 //Decimal --> Hex in char, convert all digits in a array
 void DecToHexArray(unsigned char dec [], char hex [], int count);
+
+void DecToHexModDiv(unsigned char dec, char &hex);
+
+
+double _16dSj(__int64 d, int j);

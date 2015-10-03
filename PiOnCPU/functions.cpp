@@ -1,4 +1,5 @@
 #include "functions.h"
+#include <cmath>
 
 __int64 biexp(__int64 a, __int64 b, __int64 mod)
 {
@@ -25,4 +26,20 @@ void DecToHexArray(unsigned char dec [], char hex [], int count)
 {
 	for (int i = 0; i < count; i++)
 		DecToHexSingle(dec[i], &hex[2 * i]);
+}
+
+void DecToHexModDiv(unsigned char dec, char &hex)
+{
+	hex = hex_table[dec];
+}
+
+double _16dSj(__int64 d, int j)
+{
+	double sum = 0;
+	for (__int64 k = 0; k <= d; k++)
+	{
+		sum += (double) biexp(16, d - k, 8 * k + j) / (8 * k + j);
+	}
+
+	return fmod(sum, 1);
 }
